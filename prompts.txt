@@ -1,0 +1,125 @@
+============================================================
+CONSULTA #1
+Etapa del proyecto: Etapa 1
+Fecha: 20/07/2026
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT:
+Genera el código HTML para una página principal de un servicio técnico de computadores llamado TechFix con un navbar, una sección hero, una sección de servicios, una sección de marcas, una tabla de precios y testimonios.
+
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve):
+Copilot devolvió una estructura HTML completa con un encabezado, navegación con enlaces, una sección principal con hero, secciones de servicios y marcas, una tabla de precios y una sección de testimonios con varios ejemplos.
+
+------------------------------------------------------------
+USO EN EL PROYECTO:
+Usé la estructura general que propuso Copilot pero la simplifiqué. Ajusté los textos para que coincidan con los nombres de secciones y servicios que pedía la consigna. Cambié algunos títulos y párrafos para que se vieran más claros en castellano y eliminé partes que no necesitaba.
+
+------------------------------------------------------------
+REFLEXION PERSONAL:
+El prompt fue útil porque me ahorró tiempo al armar el esqueleto de la página principal. Obtuve algo parecido a lo que esperaba, pero igual tuve que borrar cosas demás. La próxima vez quiero ser más específico en el prompt para que Copilot no agregue tantas secciones extras.
+============================================================
+
+============================================================
+CONSULTA #2
+Etapa del proyecto: Etapa 1
+Fecha: 20/07/2026
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT:
+Propone estilos CSS con una paleta de colores tecnológicos (azules y grises) para un sitio de servicio técnico, incluyendo variables CSS, estilos para una grilla de tarjetas de servicios, una tabla de precios y un footer.
+
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve):
+Copilot sugirió un archivo CSS con variables de color, estilos globales para body, una barra de navegación, una grilla de tarjetas con efectos hover, una tabla con filas alternadas y un footer con varias columnas.
+
+------------------------------------------------------------
+USO EN EL PROYECTO:
+Tomé la idea de usar variables CSS para los colores principales y el concepto de grilla para las tarjetas de servicios. Copié parte del CSS y adapté las clases para que coincidieran con mi HTML. Dejé el efecto hover y el estilo de la tabla porque eran requisitos de la rúbrica y borré reglas que no usaba.
+
+------------------------------------------------------------
+REFLEXION PERSONAL:
+Me ayudó a tener un diseño completo más rápido de lo que hubiera hecho solo. Noté que Copilot a veces agrega muchas clases que no necesito, así que tengo que revisar bien antes de pegar. Para la próxima voy a pedir estilos por partes (navbar, tabla, etc.) para tener respuestas más chicas.
+============================================================
+
+============================================================
+CONSULTA #3
+Etapa del proyecto: Etapa 2
+Fecha: 20/07/2026
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT:
+Genera el código HTML de un formulario dividido en cuatro secciones (datos del cliente, datos del equipo, descripción del problema y preferencias de entrega) para un servicio técnico, usando labels, fieldset y legend.
+
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve):
+Copilot devolvió un formulario con varias secciones en etiquetas section y fieldset, con inputs de texto, selects, radios y checkboxes. También incluyó algunos ejemplos de campos condicionales como empresa, tipo de dispositivo "Otro" y retiro a domicilio.
+
+------------------------------------------------------------
+USO EN EL PROYECTO:
+Usé la base del formulario que generó Copilot y la ajusté a lo que pedía la consigna. Cambié nombres de campos, agregué provincias argentinas, el presupuesto máximo y los checkboxes de diagnóstico y términos. También eliminé campos inventados que no aparecían en el enunciado.
+
+------------------------------------------------------------
+REFLEXION PERSONAL:
+Fue muy útil porque me dio casi toda la estructura de las cuatro secciones sin tener que escribir cada input a mano. Igual tuve que comparar con el PDF para no dejar cosas que no correspondían. La siguiente vez voy a ir sección por sección en el prompt para que la respuesta sea más exacta.
+============================================================
+
+============================================================
+CONSULTA #4
+Etapa del proyecto: Etapa 2
+Fecha: 20/07/2026
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT:
+Dame un ejemplo de estilos CSS para un formulario centrado con ancho máximo de 750px, secciones con fondo diferente, campos que cambien con :focus y clases para campo-error y campo-ok.
+
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve):
+Copilot propuso reglas CSS para un contenedor principal centrado, secciones con fondo y borde, estilos para inputs y selects en estado normal y :focus, y clases .campo-error y .campo-ok con bordes rojos y verdes.
+
+------------------------------------------------------------
+USO EN EL PROYECTO:
+Tomé casi todo el CSS que sugirió para el contenedor del formulario y las secciones. Mantengo las clases .campo-error y .campo-ok porque encajan con lo que usaría en la validación de la Etapa 3. Ajusté algunos márgenes para que el formulario se vea mejor con el resto del sitio.
+
+------------------------------------------------------------
+REFLEXION PERSONAL:
+El prompt fue claro y la respuesta me ayudó a cumplir varios requisitos de estilo de una sola vez. Me gustó que ya incluyera el estado :focus porque a veces lo olvido. Para próximas veces puedo pedirle también ejemplos de cómo organizar mejor el formulario en dos columnas para escritorio.
+============================================================
+
+============================================================
+CONSULTA #5
+Etapa del proyecto: Etapa 3
+Fecha: 20/07/2026
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT:
+Escribe código JavaScript en vanilla para validar un formulario de ingreso de equipo: usar expresiones regulares para nombre, DNI, correo y CUIT, mostrar mensajes de error bajo cada campo y aplicar clases campo-error y campo-ok.
+
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve):
+Copilot generó un script que escucha el evento submit, usa preventDefault, valida varios campos con regex y, según el resultado, agrega clases de error o éxito. También crea elementos para mostrar mensajes de error debajo de los inputs.
+
+------------------------------------------------------------
+USO EN EL PROYECTO:
+Usé la estructura del manejo del submit y las funciones para mostrar errores y marcar los campos. Modifiqué las expresiones regulares y los mensajes para que cumplan exactamente con las reglas del PDF (por ejemplo, longitud del DNI y formato del CUIT). Además agregué lógica para ignorar campos que están ocultos.
+
+------------------------------------------------------------
+REFLEXION PERSONAL:
+Me sirvió como base para no empezar el JS desde cero. Tuve que entender el código para adaptarlo, pero eso también me ayudó a practicar. En otro trabajo voy a probar pedirle a Copilot que incluya desde el principio la validación condicional según visibilidad para ahorrar más tiempo.
+============================================================
+
+============================================================
+CONSULTA #6
+Etapa del proyecto: Etapa 3
+Fecha: 20/07/2026
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT:
+Muéstrame cómo generar un número de orden aleatorio con Math.random en JavaScript y cómo reemplazar un formulario por una pantalla de confirmación que use datos ingresados por el usuario.
+
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve):
+Copilot explicó cómo usar Math.random y Math.floor para crear un número entero dentro de un rango y dio un ejemplo de ocultar un formulario y mostrar un div de confirmación con innerHTML que incluye datos del usuario.
+
+------------------------------------------------------------
+USO EN EL PROYECTO:
+Seguí la idea de generar un número de seis dígitos y ocultar el formulario agregando una clase. Llené la sección de confirmación con el nombre, dispositivo, marca, modelo y la modalidad de entrega, más el número de orden. También agregué los botones para volver al inicio e ingresar otro equipo.
+
+------------------------------------------------------------
+REFLEXION PERSONAL:
+El prompt fue muy directo y la respuesta me dio justo lo que necesitaba para terminar la Etapa 3. Pude implementar la confirmación sin complicarme con la generación del número. Para una próxima vez podría pedirle también sugerencias sobre cómo animar la aparición de la pantalla de confirmación para que quede más prolijo.
+============================================================
