@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso de equipo - TechFix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">TechFix</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#precios">Precios</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="ingreso.html">Ingresar equipo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="ingreso-main">
+    <h1>Formulario de ingreso de equipo</h1>
+    <p>Complete los datos para registrar el ingreso de su equipo a TechFix.</p>
+
+    <form id="form-ingreso">
+      <section class="form-section">
+        <h2>Sección A — Datos del cliente</h2>
+
+        <div class="campo">
+          <label for="nombreCompleto">Nombre completo *</label>
+          <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+        </div>
+
+        <div class="campo">
+          <label for="dni">DNI *</label>
+          <input type="text" id="dni" name="dni" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="emailConfirm">Confirmar correo electrónico *</label>
+          <input type="email" id="emailConfirm" name="emailConfirm" required>
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Teléfono de contacto *</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <fieldset class="campo">
+          <legend>Tipo de cliente *</legend>
+          <label><input type="radio" name="tipoCliente" value="Particular"> Particular</label>
+          <label><input type="radio" name="tipoCliente" value="Empresa"> Empresa</label>
+        </fieldset>
+
+        <div class="campo campo-empresa oculto">
+          <label for="nombreEmpresa">Nombre de la empresa *</label>
+          <input type="text" id="nombreEmpresa" name="nombreEmpresa">
+        </div>
+
+        <div class="campo campo-empresa oculto">
+          <label for="cuit">CUIT *</label>
+          <input type="text" id="cuit" name="cuit" placeholder="##-########-# o 11 dígitos">
+        </div>
+
+        <div class="campo">
+          <label for="provincia">Provincia *</label>
+          <select id="provincia" name="provincia" required>
+            <option value="">Seleccione...</option>
+            <option>Buenos Aires</option>
+            <option>Córdoba</option>
+            <option>Santa Fe</option>
+            <option>Mendoza</option>
+            <option>Tucumán</option>
+            <option>Entre Ríos</option>
+            <option>Salta</option>
+            <option>Neuquén</option>
+            <option>Río Negro</option>
+            <option>Chubut</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="localidad">Localidad *</label>
+          <input type="text" id="localidad" name="localidad" required>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Sección B — Datos del equipo</h2>
+
+        <div class="campo">
+          <label for="tipoDispositivo">Tipo de dispositivo *</label>
+          <select id="tipoDispositivo" name="tipoDispositivo" required>
+            <option value="">Seleccione...</option>
+            <option>Notebook</option>
+            <option>Computador de escritorio</option>
+            <option>Impresora</option>
+            <option>Tablet</option>
+            <option>Telefono movil</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <div class="campo oculto" id="campoTipoOtro">
+          <label for="tipoOtro">Especifique el tipo de dispositivo *</label>
+          <input type="text" id="tipoOtro" name="tipoOtro">
+        </div>
+
+        <div class="campo">
+          <label for="marca">Marca *</label>
+          <select id="marca" name="marca" required>
+            <option value="">Seleccione...</option>
+            <option>HP</option>
+            <option>Dell</option>
+            <option>Lenovo</option>
+            <option>Apple</option>
+            <option>Samsung</option>
+            <option>Asus</option>
+            <option>Otra</option>
+          </select>
+        </div>
+
+        <div class="campo oculto" id="campoMarcaOtra">
+          <label for="marcaOtra">Especifique la marca *</label>
+          <input type="text" id="marcaOtra" name="marcaOtra">
+        </div>
+
+        <div class="campo">
+          <label for="modelo">Modelo *</label>
+          <input type="text" id="modelo" name="modelo" required>
+        </div>
+
+        <div class="campo">
+          <label for="serie">Número de serie o IMEI (opcional)</label>
+          <input type="text" id="serie" name="serie" placeholder="Puede encontrarlo en la parte trasera o en la etiqueta del equipo">
+        </div>
+
+        <div class="campo">
+          <label for="so">Sistema operativo *</label>
+          <select id="so" name="so" required>
+            <option value="">Seleccione...</option>
+            <option>Windows 10</option>
+            <option>Windows 11</option>
+            <option>macOS</option>
+            <option>Linux</option>
+            <option>Android</option>
+            <option>iOS</option>
+            <option>No aplica / No sabe</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label><input type="checkbox" id="tieneGarantia" name="tieneGarantia"> El equipo tiene garantía vigente del fabricante</label>
+        </div>
+
+        <div class="campo oculto" id="campoOrdenGarantia">
+          <label for="ordenGarantia">Número de orden de compra o fecha de compra *</label>
+          <input type="text" id="ordenGarantia" name="ordenGarantia">
+        </div>
+
+        <div class="campo">
+          <label><input type="checkbox" id="tieneDatos" name="tieneDatos"> El equipo contiene datos importantes sin respaldo</label>
+          <p class="nota">TechFix no se responsabiliza por pérdida de datos.</p>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Sección C — Descripción del problema</h2>
+
+        <div class="campo">
+          <label for="tipoProblema">Tipo de problema principal *</label>
+          <select id="tipoProblema" name="tipoProblema" required>
+            <option value="">Seleccione...</option>
+            <option>No enciende</option>
+            <option>Pantalla dañada</option>
+            <option>Lentitud o rendimiento</option>
+            <option>Virus o malware</option>
+            <option>Problema de red o conectividad</option>
+            <option>Daño por líquido</option>
+            <option>Sonido</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="desdeCuando">Desde cuándo ocurre el problema *</label>
+          <select id="desdeCuando" name="desdeCuando" required>
+            <option value="">Seleccione...</option>
+            <option>Hoy</option>
+            <option>Hace algunos días</option>
+            <option>Hace semanas</option>
+            <option>Hace meses</option>
+          </select>
+        </div>
+
+        <fieldset class="campo">
+          <legend>El problema es *</legend>
+          <label><input type="radio" name="tipoFalla" value="Permanente"> Permanente</label>
+          <label><input type="radio" name="tipoFalla" value="Intermitente"> Intermitente</label>
+        </fieldset>
+
+        <div class="campo">
+          <label for="descripcion">Descripción detallada del problema *</label>
+          <textarea id="descripcion" name="descripcion" rows="4" maxlength="500" required></textarea>
+          <small id="descripcionContador">0 / 500</small>
+        </div>
+
+        <div class="campo">
+          <label><input type="checkbox" id="reparacionPrevia" name="reparacionPrevia"> Ya intenté repararlo o lo llevé a otro técnico</label>
+        </div>
+
+        <div class="campo oculto" id="campoReparacionPrevia">
+          <label for="reparacionPreviaTexto">Qué se hizo anteriormente (opcional, máx 300 caracteres)</label>
+          <textarea id="reparacionPreviaTexto" name="reparacionPreviaTexto" rows="3" maxlength="300"></textarea>
+          <small id="reparacionPreviaContador">0 / 300</small>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Sección D — Preferencias de entrega y confirmación</h2>
+
+        <fieldset class="campo">
+          <legend>Modalidad de entrega del equipo *</legend>
+          <label><input type="radio" name="modalidadEntrega" value="Local"> Lo llevo personalmente al local</label>
+          <label><input type="radio" name="modalidadEntrega" value="Retiro"> Solicito retiro a domicilio</label>
+        </fieldset>
+
+        <div class="campo oculto" id="campoDireccionRetiro">
+          <label for="direccionRetiro">Dirección completa para retiro *</label>
+          <input type="text" id="direccionRetiro" name="direccionRetiro">
+        </div>
+
+        <div class="campo">
+          <label for="presupuesto">Presupuesto máximo autorizado sin consulta previa *</label>
+          <select id="presupuesto" name="presupuesto" required>
+            <option value="">Seleccione...</option>
+            <option>Hasta $5.000</option>
+            <option>Hasta $15.000</option>
+            <option>Hasta $30.000</option>
+            <option>Sin limite</option>
+            <option>Necesito consultar antes de aprobar cualquier gasto</option>
+          </select>
+        </div>
+
+        <fieldset class="campo">
+          <legend>Preferencia de contacto para notificaciones *</legend>
+          <label><input type="checkbox" name="prefContacto" value="WhatsApp"> WhatsApp</label>
+          <label><input type="checkbox" name="prefContacto" value="Email"> Correo electrónico</label>
+          <label><input type="checkbox" name="prefContacto" value="Llamada"> Llamada telefónica</label>
+        </fieldset>
+
+        <div class="campo">
+          <label for="horario">Horario preferido para ser contactado *</label>
+          <select id="horario" name="horario" required>
+            <option value="">Seleccione...</option>
+            <option>Mañana 9 a 12</option>
+            <option>Tarde 12 a 17</option>
+            <option>Tarde-noche 17 a 20</option>
+            <option>Indistinto</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label><input type="checkbox" id="aceptaDiagnostico" name="aceptaDiagnostico"> Acepto que el diagnóstico puede demorar hasta 48 horas hábiles *</label>
+        </div>
+
+        <div class="campo">
+          <label><input type="checkbox" id="aceptaTerminos" name="aceptaTerminos"> Acepto los <a href="#" target="_blank">Términos y Condiciones</a> del servicio *</label>
+        </div>
+      </section>
+
+      <div class="form-botones">
+        <button type="submit" class="btn-primary">Registrar ingreso</button>
+        <button type="reset" class="btn-secundario">Limpiar</button>
+        <a href="index.html" class="btn-link">Volver al inicio</a>
+      </div>
+    </form>
+
+    <section id="confirmacion" class="oculto confirmacion"></section>
+  </main>
+
+  <script src="validaciones.js"></script>
+</body>
+</html>
